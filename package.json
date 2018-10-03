@@ -1,0 +1,11 @@
+{
+  "name": "mysite",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "socket.io": "^2.1.1",
+  },
+  "scripts": {
+  }
+}
