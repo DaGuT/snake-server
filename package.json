@@ -8,5 +8,8 @@
 	"express": "latest",
 	"http": "latest",
 	"https": "latest"
+  },
+  "scripts": {
+	"start": "node snake.js"
   }
 }
