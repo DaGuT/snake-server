@@ -5,6 +5,9 @@
   "homepage": ".",
   "dependencies": {
     "socket.io": "^2.1.1",
+	"express": "latest",
+	"http": "latest",
+	"https": "latest"
   },
   "scripts": {
   }
