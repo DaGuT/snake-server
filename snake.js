@@ -95,18 +95,23 @@ function timedBroadcast(snakes) { //it will prevent updating snakes more often t
 }
 //this is nice function that allows us to broadcast snakes only once per 20ms. This way we dont spam a lot with updates
 
+function getRandomFood() {
+  return food = {
+    x: rand(0, maxX),
+    y: rand(0, maxY),
+    r: 20,
+    color: {
+      r: rand(0, 255),
+      g: rand(0, 255),
+      b: rand(0, 255)
+    }
+  };
+}
+
 function makeFood() {
+  food=getRandomFood();
   foodTimer = setInterval(() => {
-    food = {
-      x: rand(0, maxX),
-      y: rand(0, maxY),
-      r: 20,
-      color: {
-        r: rand(0, 255),
-        g: rand(0, 255),
-        b: rand(0, 255)
-      }
-    };
+    food = getRandomFood();
     io.emit('spawn food', food);
   }, 10000);
 }
